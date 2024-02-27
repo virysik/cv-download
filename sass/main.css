@@ -1,0 +1,181 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #121212;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr/minmax(auto, 280px) 1fr;
+  outline: 1px solid black;
+}
+
+.img {
+  position: relative;
+  padding-bottom: 20px;
+}
+.img::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 4px;
+  bottom: 0;
+  display: block;
+  background-color: #121212;
+}
+
+.img__wrapper {
+  width: 180px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-image: url(../../img/vera-cv-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.img__title {
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.img__subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aside {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  outline: 1px solid black;
+}
+
+.aside__list {
+  margin-bottom: 16px;
+}
+.aside__list:last-child {
+  margin-bottom: 0px;
+}
+
+.aside__title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.aside__tel,
+.aside__mail,
+.aside__link,
+.aside__city {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: inherit;
+}
+
+.aside__list {
+  padding-left: 20px;
+}
+
+.main {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main__title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.experience__subtitle {
+  margin-bottom: 4px;
+}
+
+.experience__date {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.experience__list {
+  padding-left: 20px;
+}
+
+.education__date {
+  font-weight: 500;
+}
+
+.project__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project__links-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__link {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.education__subtitle {
+  margin-bottom: 4px;
+}
+
+.certificate__wrapper {
+  margin-bottom: 8px;
+}
+.certificate__wrapper:last-child {
+  margin-bottom: 0px;
+}
+
+.certificate__link {
+  text-decoration: underline;
+  color: inherit;
+}/*# sourceMappingURL=main.css.map */
