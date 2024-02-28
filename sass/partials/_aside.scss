@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: column;
   gap: $sectiongap;
+  border-right: 2px solid $bgcolor;
 }
 .aside__list {
   margin-bottom: 16px;
