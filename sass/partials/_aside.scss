@@ -1,19 +1,9 @@
 .img {
-  position: relative;
   padding-bottom: 20px;
   border-bottom-color: inherit;
   border-bottom-style: inset;
   border-bottom-width: 3px;
   border-bottom-right-radius: 25px;
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   width: 50%;
-  //   height: 4px;
-  //   bottom: 0;
-  //   display: block;
-  //   background-color: $text;
-  // }
 }
 .img__wrapper {
   width: 180px;
@@ -21,9 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  background-image: url(../../img/vera-cv-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
   border-radius: 50%;
   filter: grayscale(100%);
 }
