@@ -30,6 +30,9 @@
   flex-direction: column;
   gap: $sectiongap;
   border-right: 2px solid $bgcolor;
+  @media screen and (max-width: 600px) {
+    border-right: none;
+  }
 }
 .aside__list {
   margin-bottom: 16px;
