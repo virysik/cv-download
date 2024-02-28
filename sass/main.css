@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.5;
   margin: 0;
   width: 100vw;
@@ -39,25 +39,19 @@ button {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 734px;
   margin: 0 auto;
   display: grid;
-  grid-template: 1fr/minmax(auto, 280px) 1fr;
-  outline: 1px solid black;
+  grid-template: 1fr/minmax(auto, 220px) 1fr;
 }
 
 .img {
   position: relative;
   padding-bottom: 20px;
-}
-.img::after {
-  position: absolute;
-  content: "";
-  width: 50%;
-  height: 4px;
-  bottom: 0;
-  display: block;
-  background-color: #121212;
+  border-bottom-color: inherit;
+  border-bottom-style: inset;
+  border-bottom-width: 3px;
+  border-bottom-right-radius: 25px;
 }
 
 .img__wrapper {
@@ -66,7 +60,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  background-image: url(./img/vera-cv-img.jpg);
+  background-image: url(../../img/vera-cv-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -76,21 +70,20 @@ button {
 .img__title {
   margin-bottom: 8px;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
 .img__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .aside {
-  padding: 30px;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  outline: 1px solid black;
+  gap: 20px;
 }
 
 .aside__list {
@@ -120,10 +113,10 @@ button {
 }
 
 .main {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .main__title {

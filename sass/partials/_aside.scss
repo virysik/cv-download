@@ -1,15 +1,19 @@
 .img {
   position: relative;
   padding-bottom: 20px;
-  &::after {
-    position: absolute;
-    content: "";
-    width: 50%;
-    height: 4px;
-    bottom: 0;
-    display: block;
-    background-color: $text;
-  }
+  border-bottom-color: inherit;
+  border-bottom-style: inset;
+  border-bottom-width: 3px;
+  border-bottom-right-radius: 25px;
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 50%;
+  //   height: 4px;
+  //   bottom: 0;
+  //   display: block;
+  //   background-color: $text;
+  // }
 }
 .img__wrapper {
   width: 180px;
@@ -17,7 +21,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  background-image: url(./img/vera-cv-img.jpg);
+  background-image: url(../../img/vera-cv-img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -27,19 +31,18 @@
 .img__title {
   margin-bottom: 8px;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 .img__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 .aside {
-  padding: $gap;
+  padding: 30px 0px;
   display: flex;
   flex-direction: column;
-  gap: $gap;
-  outline: 1px solid black;
+  gap: $sectiongap;
 }
 .aside__list {
   margin-bottom: 16px;
